@@ -5,8 +5,8 @@ from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import get_settings
 from app.core.database import init_db
-from app.routes import main as main_routes
-from app.routes import admin as admin_routes
+from app.routes.main import router as main_router
+from app.routes.admin import router as admin_router
 
 import os
 
@@ -24,8 +24,8 @@ app.add_middleware(
 )
 
 # API Routes
-app.include_router(main_routes.router, prefix=settings.API_V1_STR)
-app.include_router(admin_routes.router, prefix=f"{settings.API_V1_STR}/admin")
+app.include_router(main_router, prefix=settings.API_V1_STR)
+app.include_router(admin_router, prefix=f"{settings.API_V1_STR}/admin")
 
 # Static Files
 # Serve 'public' directory as /static
