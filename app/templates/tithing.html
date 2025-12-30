@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Giving | CCCGJ{% endblock %}
+
+{% block nav_tithing %}active{% endblock %}
+
+{% block content %}
+    <section class="tithing-hero section-padding">
+        <div class="container">
+            <h1 style="font-family: var(--font-heading);">Giving</h1>
+            <p>奉献</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container text-center">
+            <p style="max-width: 600px; margin: 0 auto 40px;">
+                Your tithes and offerings support the ministry and help us spread the gospel. Thank you for your generosity.
+            </p>
+
+            <div class="grid-3" style="max-width: 900px; margin: 0 auto;">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Checks 支票</h3>
+                        <p>Please make checks payable to: CCCGJ<br/>
+                        请将支票抬头写为 CCCGJ
+                        </p>
+                        <br>
+                        <p style="font-weight: bold; font-size: 1.1rem;">邮寄地址 Mail Address：</p><br/>
+                        <p>803 Old Agency Road, <br/>Ridgeland, MS 39157</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">网络奉献</h3>
+                        <p>Donation Online through GivingFlow</p>
+                        <br>
+                        <a href="https://givingflow.rebelgive.com/492ca49234fdd70a6252" target="_blank" class="btn btn-secondary">Donate via GivingFlow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button id="back-to-top-btn" title="Go to top" aria-label="Back to top"><i class="fa-solid fa-angle-up"></i></button>
+{% endblock %}

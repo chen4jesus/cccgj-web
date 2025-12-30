@@ -1,0 +1,12 @@
+{
+    # Global options
+    email {$DOMAIN_EMAIL:admin@example.com}
+}
+
+{$DOMAIN_NAME:localhost} {
+    # Reverse proxy to the backend service
+    reverse_proxy backend:8000
+
+    # Compress responses
+    encode zstd gzip
+}

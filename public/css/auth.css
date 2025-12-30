@@ -1,0 +1,336 @@
+/* Authentication Styles - Premium Modern Design */
+
+/* ============================================
+   Auth Page Background
+   ============================================ */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated background effects */
+.auth-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle at 30% 30%,
+        rgba(99, 102, 241, 0.15) 0%,
+        transparent 50%
+    ), radial-gradient(
+        circle at 70% 70%,
+        rgba(139, 92, 246, 0.1) 0%,
+        transparent 50%
+    );
+    animation: gradientMove 15s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(-5%, 5%) rotate(180deg); }
+}
+
+/* ============================================
+   Login Card with Glassmorphism
+   ============================================ */
+.auth-card {
+    position: relative;
+    background: linear-gradient(145deg, 
+        rgba(30, 41, 59, 0.9) 0%, 
+        rgba(30, 41, 59, 0.7) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.4),
+        0 0 60px rgba(99, 102, 241, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    width: 100%;
+    max-width: 420px;
+    animation: cardSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cardSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Card glow effect on hover */
+.auth-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1.5rem;
+    background: linear-gradient(135deg, 
+        rgba(99, 102, 241, 0.15) 0%, 
+        rgba(139, 92, 246, 0.1) 50%,
+        rgba(99, 102, 241, 0.15) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.auth-card:hover::before {
+    opacity: 1;
+}
+
+/* ============================================
+   Title
+   ============================================ */
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+}
+
+/* ============================================
+   Form Styles
+   ============================================ */
+.auth-form .form-group {
+    margin-bottom: 1.75rem;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 0.625rem;
+    color: #a5b4fc;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    color: #e2e8f0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+}
+
+.auth-form input::placeholder {
+    color: #64748b;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: rgba(99, 102, 241, 0.6);
+    background: rgba(15, 23, 42, 0.8);
+    box-shadow: 
+        0 0 0 4px rgba(99, 102, 241, 0.15),
+        0 0 20px rgba(99, 102, 241, 0.1);
+}
+
+/* Input autofill styling */
+.auth-form input:-webkit-autofill,
+.auth-form input:-webkit-autofill:hover,
+.auth-form input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px rgba(15, 23, 42, 0.9) inset;
+    -webkit-text-fill-color: #e2e8f0;
+    border-color: rgba(99, 102, 241, 0.4);
+}
+
+/* ============================================
+   Submit Button - Gradient with Animation
+   ============================================ */
+.auth-form .btn-primary {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+    background-size: 200% 200%;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+        0 4px 15px rgba(99, 102, 241, 0.4),
+        0 0 40px rgba(99, 102, 241, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-form .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: left 0.5s ease;
+}
+
+.auth-form .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+        0 8px 25px rgba(99, 102, 241, 0.5),
+        0 0 60px rgba(99, 102, 241, 0.2);
+    background-position: 100% 0;
+}
+
+.auth-form .btn-primary:hover::before {
+    left: 100%;
+}
+
+.auth-form .btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+/* ============================================
+   Auth Link
+   ============================================ */
+.auth-link {
+    text-align: center;
+    margin-top: 2rem;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.auth-link a {
+    color: #a5b4fc;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.auth-link a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #818cf8, #c084fc);
+    transition: width 0.3s ease;
+}
+
+.auth-link a:hover {
+    color: #c084fc;
+}
+
+.auth-link a:hover::after {
+    width: 100%;
+}
+
+/* ============================================
+   Flash Messages in Auth
+   ============================================ */
+.auth-card .alert,
+.auth-card .flash-message {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.9rem;
+    animation: flashIn 0.4s ease-out;
+}
+
+@keyframes flashIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-card .alert-success {
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    color: #86efac;
+}
+
+.auth-card .alert-error,
+.auth-card .alert-danger {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #fca5a5;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+        border-radius: 1.25rem;
+    }
+    
+    .auth-card h2 {
+        font-size: 1.75rem;
+    }
+    
+    .auth-form input {
+        padding: 0.875rem 1rem;
+    }
+    
+    .auth-form .btn-primary {
+        padding: 0.875rem 1.5rem;
+    }
+}
+
+/* ============================================
+   Loading State (for future enhancement)
+   ============================================ */
+.auth-form .btn-primary.loading {
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.auth-form .btn-primary.loading::after {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

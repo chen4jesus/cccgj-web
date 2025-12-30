@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Login | CCCGJ Admin{% endblock %}
+
+{% block head_extra %}
+    <link rel="stylesheet" href="/static/css/auth.css">
+{% endblock %}
+
+{% block nav_links %}{% endblock %}
+
+{% block footer %}{% endblock %}
+
+{% block content %}
+    <div class="auth-container" style="margin-top: 50px;">
+      <div class="auth-card">
+        <h2>Login</h2>
+        <div id="login-error" style="color: red; margin-bottom: 1em; display: none;"></div>
+        <form
+          id="login-form"
+          class="auth-form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required/>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required/>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Extra scripts for login/admin -->
+    <script src="/static/js/admin.js"></script>
+{% endblock %}

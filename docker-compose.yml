@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  backend:
+    container_name: cccgj_backend
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=sqlite:////app/instance/app.db
+      - ALTCHA_SECRET=${ALTCHA_SECRET:-}
+      - ALTCHA_COMPLEXITY=${ALTCHA_COMPLEXITY:-100000}
+    volumes:
+      - ./instance:/app/instance
+      - ./public:/app/public
+    restart: unless-stopped
+
+  caddy:
+    container_name: cccgj_caddy
+    image: caddy:2-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - DOMAIN_NAME=${DOMAIN_NAME:-localhost}
+      - DOMAIN_EMAIL=${DOMAIN_EMAIL:-admin@example.com}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  app_logs:
+  app_uploads:
+  caddy_data:
+  caddy_config:
