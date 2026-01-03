@@ -1,0 +1,30 @@
+{
+  "name": "MySchema",
+  "classes": {
+    "CCCGJ": {
+      "name": "CCCGJ",
+      "description": "Root object",
+      "slots": [
+        "Person.id",
+        "Person.name",
+        "Person.age"
+      ]
+    }
+  },
+  "slots": {
+    "Person.id": {
+      "name": "id",
+      "range": "integer",
+      "required": true,
+      "identifier": true
+    },
+    "Person.name": {
+      "name": "name",
+      "range": "string"
+    },
+    "Person.age": {
+      "name": "age",
+      "range": "integer"
+    }
+  }
+}
