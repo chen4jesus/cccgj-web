@@ -51,9 +51,12 @@
                     <img src="/static/images/fellowship cover.jpg" onerror="this.src='/static/images/fellowship cover.jpg'" alt="Friday Night Fellowship" class="oval-horizontal-image">
                 </div>
                 <div class="ministry-text-col">
-                    <h2>Friday Fellowship 周五团契</h2>
+                    <h2>Friday Night Fellowship 周五团契</h2>
                     <span class="ministry-time">
-                        6:30pm - 7:10pm 晚餐 Dinner&nbsp;<br>7:10pm - 8:50pm 小组团契（英文团契和三个中文团契）Small groups (Three groups in Mandarin and one group in English)&nbsp;<br>*其中的几个团契有时在家中聚会。Some fellowship groups meet at homes sometimes.</span>
+                        6:30pm - 7:10pm dinner 晚餐<br>
+                        7:10pm - 7:30pm worship 敬拜<br>
+                        7:30pm - 8:50pm Small groups (English Group, Mandarin Group, Child care) 小组聚会（儿童看顾，英文组，中文组）
+                    </span>
                     <div class="ministry-desc">
                     </div>
                 </div>
@@ -70,6 +73,20 @@
                 </div>
             </div>
 
+            <!-- Gospel Fellowship -->
+            <div class="ministry-row">
+                <div class="ministry-img-col">
+                    <img src="/static/images/ministry_gospel.jpg" onerror="this.src='/static/images/ministry_gospel.jpg'" alt="Gospel Fellowship" class="oval-horizontal-image">
+                </div>
+                <div class="ministry-text-col">
+                    <h2>Gospel Fellowship 福音团契</h2>
+                    <span class="ministry-time">2nd & 4th Fridays (Monthly)</span>
+                    <div class="ministry-desc">
+                        <p class="lang-cn">每个月的第二个周五和第四个周五的晚上，分别在Madison和Clinton弟兄姊妹的家中聚会，特别为平时不来教会的朋友准备。</p>
+                        <p>On the second Friday evening of each month, we gather at the home of brothers and sisters in Madison; on the fourth Friday evening, we meet at the home of brothers and sisters in Clinton. These gatherings are especially arranged for friends who don’t usually attend church.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
