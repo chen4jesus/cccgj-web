@@ -18,34 +18,8 @@
             
             <div class="carousel-container" style="margin-bottom: 40px;">
                 <div class="carousel-wrapper">
-                    <div class="carousel-track" style="transform: translateX(-200%);">
-<div class="carousel-item" style="flex: 0 0 50%;">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3 class="card-title">世界动荡，圣言不改 In this Turbulent World, God's Word Stands Firm</h3>
-                                    <p>Date: Jan 11, 2026</p>
-                                    <p>Speaker: CCCGJ Media</p>
-                                    <br>
-                                    <a href="https://www.youtube.com/watch?v=d9HqkTu6r9I" target="_blank" class="btn btn-secondary youtube-btn">
-                                        <i class="fab fa-youtube"></i> Watch on YouTube
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-<div class="carousel-item" style="flex: 0 0 50%;">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3 class="card-title">新年新志向The Right Mind For the New Year</h3>
-                                    <p>Date: Jan 9, 2026</p>
-                                    <p>Speaker: CCCGJ Media</p>
-                                    <br>
-                                    <a href="https://www.youtube.com/watch?v=BsQ7FuSxesM" target="_blank" class="btn btn-secondary youtube-btn">
-                                        <i class="fab fa-youtube"></i> Watch on YouTube
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-<div class="carousel-item" style="flex: 0 0 50%;">
+                    <div class="carousel-track" style="transform: translateX(-33.3333%);">
+<div class="carousel-item" style="flex: 0 0 33.3333%;">
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">圣子在行动 (2) 耶稣去！The Son on Mission2: Jesus Went!</h3>
@@ -58,7 +32,7 @@
                                 </div>
                             </div>
                         </div>
-<div class="carousel-item" style="flex: 0 0 50%;">
+<div class="carousel-item" style="flex: 0 0 33.3333%;">
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">圣子在行动（一）   神啊，我来了！The Son on Mission 1   God, I have Come!</h3>
@@ -71,7 +45,7 @@
                                 </div>
                             </div>
                         </div>
-<div class="carousel-item" style="flex: 0 0 50%;">
+<div class="carousel-item" style="flex: 0 0 33.3333%;">
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">智慧人寻找上帝 Wise People Seek God</h3>
@@ -84,7 +58,7 @@
                                 </div>
                             </div>
                         </div>
-<div class="carousel-item" style="flex: 0 0 50%;">
+<div class="carousel-item" style="flex: 0 0 33.3333%;">
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">道成肉身 The Word Made Flesh</h3>
@@ -92,6 +66,32 @@
                                     <p>Speaker: CCCGJ Media</p>
                                     <br>
                                     <a href="https://www.youtube.com/watch?v=5nM4siiLd6s" target="_blank" class="btn btn-secondary youtube-btn">
+                                        <i class="fab fa-youtube"></i> Watch on YouTube
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+<div class="carousel-item" style="flex: 0 0 33.3333%;">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">天路历程的动力与路径</h3>
+                                    <p>Date: Nov 30, 2025</p>
+                                    <p>Speaker: CCCGJ Media</p>
+                                    <br>
+                                    <a href="https://www.youtube.com/watch?v=v9sLnBNPzsI" target="_blank" class="btn btn-secondary youtube-btn">
+                                        <i class="fab fa-youtube"></i> Watch on YouTube
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+<div class="carousel-item" style="flex: 0 0 33.3333%;">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">基督的普世教会是神的家 Christ's Universal Church is the Family of God</h3>
+                                    <p>Date: Nov 23, 2025</p>
+                                    <p>Speaker: CCCGJ Media</p>
+                                    <br>
+                                    <a href="https://www.youtube.com/watch?v=XKvmA0zhPBw" target="_blank" class="btn btn-secondary youtube-btn">
                                         <i class="fab fa-youtube"></i> Watch on YouTube
                                     </a>
                                 </div>
@@ -153,7 +153,7 @@
                 </a>
 
                 <!-- Tile 6 (Placeholder) -->
-                <a href="https://www.desiringgod.org/" class="resource-tile" target="_blank">
+                <a href="#" class="resource-tile" target="_blank">
                     <div class="resource-icon"><i class="fas fa-link"></i></div>
                     <div class="resource-title">Another Resource</div>
                     <div class="resource-subtitle">Description of the external resource or website goes here. You can manually update this text.</div>
