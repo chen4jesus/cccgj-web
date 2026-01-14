@@ -298,7 +298,7 @@ header {
 .ministry-hero {
   background:
     linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.6)),
-    url("../images/church.jpg");
+    url("../images/hero-new-background.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -319,7 +319,7 @@ header {
 .hero {
   background:
     linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.5)),
-    url("../images/church.jpg");
+    url("../images/hero-new-background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
