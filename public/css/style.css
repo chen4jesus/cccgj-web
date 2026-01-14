@@ -319,7 +319,7 @@ header {
 .hero {
   background:
     linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.5)),
-    url("../images/hero-new-background.jpg");
+    url("../images/hero-new-background.jpg?v=20250114");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
