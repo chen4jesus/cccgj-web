@@ -42,35 +42,35 @@ templates = Jinja2Templates(directory=templates_dir)
 # Page Routes
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(name="index.html", request=request)
 
 @app.get("/about", response_class=HTMLResponse)
 async def about(request: Request):
-    return templates.TemplateResponse("about.html", {"request": request})
+    return templates.TemplateResponse(name="about.html", request=request)
 
 @app.get("/ministry", response_class=HTMLResponse)
 async def ministry(request: Request):
-    return templates.TemplateResponse("ministry.html", {"request": request})
+    return templates.TemplateResponse(name="ministry.html", request=request)
 
 @app.get("/resources", response_class=HTMLResponse)
 async def resources(request: Request):
-    return templates.TemplateResponse("resources.html", {"request": request})
+    return templates.TemplateResponse(name="resources.html", request=request)
 
 @app.get("/tithing", response_class=HTMLResponse)
 async def tithing(request: Request):
-    return templates.TemplateResponse("tithing.html", {"request": request})
+    return templates.TemplateResponse(name="tithing.html", request=request)
 
 @app.get("/contact", response_class=HTMLResponse)
 async def contact(request: Request):
-    return templates.TemplateResponse("contact.html", {"request": request})
+    return templates.TemplateResponse(name="contact.html", request=request)
 
 @app.get("/login", response_class=HTMLResponse)
 async def login(request: Request):
-    return templates.TemplateResponse("login.html", {"request": request})
+    return templates.TemplateResponse(name="login.html", request=request)
 
 @app.get("/admin/dashboard", response_class=HTMLResponse)
 async def admin_dashboard(request: Request):
-    return templates.TemplateResponse("admin/dashboard.html", {"request": request})
+    return templates.TemplateResponse(name="admin/dashboard.html", request=request)
 
 @app.on_event("startup")
 def on_startup():
