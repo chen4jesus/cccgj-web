@@ -18,80 +18,80 @@
             
             <div class="carousel-container" style="margin-bottom: 40px;">
                 <div class="carousel-wrapper">
-                    <div class="carousel-track" style="transform: translateX(-33.3333%);">
-<div class="carousel-item" style="flex: 0 0 33.3333%;">
+                    <div class="carousel-track" style="transform: translateX(-200%);">
+<div class="carousel-item" style="flex: 0 0 50%;">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">盟约的代价 The Cost of Covenant</h3>
-                                    <p style="background-color: rgb(255, 255, 255);">Date: Jun 14, 2026</p>
+                                    <h3 class="card-title">“死去活来”的洗礼 Baptism about Death and Life</h3>
+                                    <p>Date: Apr 5, 2026</p>
                                     <p>Speaker: CCCGJ Media</p>
                                     <br>
-                                    <a href="https://www.youtube.com/watch?v=h9gkK7JYzDM" target="_blank" class="btn btn-secondary youtube-btn">
+                                    <a href="https://www.youtube.com/watch?v=8dwlvNC3VH0" target="_blank" class="btn btn-secondary youtube-btn">
                                         <i class="fab fa-youtube"></i> Watch on YouTube
                                     </a>
                                 </div>
                             </div>
                         </div>
-<div class="carousel-item" style="flex: 0 0 33.3333%;">
+<div class="carousel-item" style="flex: 0 0 50%;">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">骄傲与信望爱 Pride vs Faith, Hope and Love</h3>
-                                    <p>Date: Jun 7, 2026</p>
+                                    <h3 class="card-title">赎罪：从神临到人 The Atonement: From God to Man</h3>
+                                    <p>Date: Mar 29, 2026</p>
                                     <p>Speaker: CCCGJ Media</p>
                                     <br>
-                                    <a href="https://www.youtube.com/watch?v=weLX_U-gDMk" target="_blank" class="btn btn-secondary youtube-btn">
+                                    <a href="https://www.youtube.com/watch?v=_7cP17K5Lsw" target="_blank" class="btn btn-secondary youtube-btn">
                                         <i class="fab fa-youtube"></i> Watch on YouTube
                                     </a>
                                 </div>
                             </div>
                         </div>
-<div class="carousel-item" style="flex: 0 0 33.3333%;">
+<div class="carousel-item" style="flex: 0 0 50%;">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">缺口处的避难所 God's Refuge in Life's Gaps</h3>
-                                    <p>Date: May 31, 2026</p>
+                                    <h3 class="card-title">上帝给人类的兆头 God's Sign to Humanity</h3>
+                                    <p>Date: Mar 22, 2026</p>
                                     <p>Speaker: CCCGJ Media</p>
                                     <br>
-                                    <a href="https://www.youtube.com/watch?v=8GcuxjEVmSA" target="_blank" class="btn btn-secondary youtube-btn">
+                                    <a href="https://www.youtube.com/watch?v=PM-Ra9qKeb8" target="_blank" class="btn btn-secondary youtube-btn">
                                         <i class="fab fa-youtube"></i> Watch on YouTube
                                     </a>
                                 </div>
                             </div>
                         </div>
-<div class="carousel-item" style="flex: 0 0 33.3333%;">
+<div class="carousel-item" style="flex: 0 0 50%;">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">美丽新世界 The Brave New World</h3>
-                                    <p>Date: May 17, 2026</p>
+                                    <h3 class="card-title">我看见了主 I Saw the LORD</h3>
+                                    <p>Date: Mar 13, 2026</p>
                                     <p>Speaker: CCCGJ Media</p>
                                     <br>
-                                    <a href="https://www.youtube.com/watch?v=a0jvUBKLxe8" target="_blank" class="btn btn-secondary youtube-btn">
+                                    <a href="https://www.youtube.com/watch?v=HU6G1S_AFDo" target="_blank" class="btn btn-secondary youtube-btn">
                                         <i class="fab fa-youtube"></i> Watch on YouTube
                                     </a>
                                 </div>
                             </div>
                         </div>
-<div class="carousel-item" style="flex: 0 0 33.3333%;">
+<div class="carousel-item" style="flex: 0 0 50%;">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">耶西与耶稣：平凡中的伟大(Jesse and Jesus: Greatness in the Ordinary)</h3>
-                                    <p>Date: May 10, 2026</p>
+                                    <h3 class="card-title">上帝的葡萄园 God's Vineyard</h3>
+                                    <p>Date: Mar 1, 2026</p>
                                     <p>Speaker: CCCGJ Media</p>
                                     <br>
-                                    <a href="https://www.youtube.com/watch?v=gHIQ-mxS80U" target="_blank" class="btn btn-secondary youtube-btn">
+                                    <a href="https://www.youtube.com/watch?v=KQX1Eb54PAM" target="_blank" class="btn btn-secondary youtube-btn">
                                         <i class="fab fa-youtube"></i> Watch on YouTube
                                     </a>
                                 </div>
                             </div>
                         </div>
-<div class="carousel-item" style="flex: 0 0 33.3333%;">
+<div class="carousel-item" style="flex: 0 0 50%;">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">《上帝之鞭》下：报应的循环与终结 Scourge of God(Part II) - The Repetition and End of Retribution</h3>
-                                    <p>Date: May 3, 2026</p>
+                                    <h3 class="card-title">《虚假的依靠》之二：政治领袖 False Reliance Part Two Political Leaders</h3>
+                                    <p>Date: Feb 22, 2026</p>
                                     <p>Speaker: CCCGJ Media</p>
                                     <br>
-                                    <a href="https://www.youtube.com/watch?v=cHeTong7H70" target="_blank" class="btn btn-secondary youtube-btn">
+                                    <a href="https://www.youtube.com/watch?v=uByZK03NmVg" target="_blank" class="btn btn-secondary youtube-btn">
                                         <i class="fab fa-youtube"></i> Watch on YouTube
                                     </a>
                                 </div>
