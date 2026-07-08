@@ -5,6 +5,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import get_settings
 from app.core.database import init_db
+from app.core.scheduler import start_scheduler, get_cached_videos
 from app.routes.main import router as main_router
 from app.routes.admin import router as admin_router
 
@@ -54,7 +55,11 @@ async def ministry(request: Request):
 
 @app.get("/resources", response_class=HTMLResponse)
 async def resources(request: Request):
-    return templates.TemplateResponse(name="resources.html", request=request)
+    return templates.TemplateResponse(
+        name="resources.html",
+        request=request,
+        context={"videos": get_cached_videos()}
+    )
 
 @app.get("/tithing", response_class=HTMLResponse)
 async def tithing(request: Request):
@@ -75,3 +80,4 @@ async def admin_dashboard(request: Request):
 @app.on_event("startup")
 def on_startup():
     init_db()
+    start_scheduler()
