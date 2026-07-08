@@ -1,7 +1,10 @@
 import os
+from dotenv import load_dotenv
 from pydantic_settings import BaseSettings
 from functools import lru_cache
 from typing import Optional
+
+load_dotenv()
 
 class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
@@ -18,6 +21,10 @@ class Settings(BaseSettings):
     # Altcha
     ALTCHA_SECRET: str = os.environ.get("ALTCHA_SECRET", "cccgj-secret-key-12345")
     ALTCHA_COMPLEXITY: int = int(os.environ.get("ALTCHA_COMPLEXITY", 100000))
+
+    # YouTube
+    YOUTUBE_PLAYLIST_ID: str = "PLQHQ_Dw8UrH84Kfq_o2Bkvg5KoZffRkPn"
+    YOUTUBE_API_KEY: Optional[str] = os.environ.get("YOUTUBE_API_KEY")
 
     class Config:
         case_sensitive = True
