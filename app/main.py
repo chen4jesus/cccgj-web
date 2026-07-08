@@ -1,3 +1,6 @@
+import logging
+import os
+
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -9,7 +12,7 @@ from app.core.scheduler import start_scheduler, get_cached_videos
 from app.routes.main import router as main_router
 from app.routes.admin import router as admin_router
 
-import os
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 
 settings = get_settings()
 
