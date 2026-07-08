@@ -10,6 +10,7 @@ services:
       - DATABASE_URL=sqlite:////app/instance/app.db
       - ALTCHA_SECRET=${ALTCHA_SECRET:-}
       - ALTCHA_COMPLEXITY=${ALTCHA_COMPLEXITY:-100000}
+      - YOUTUBE_API_KEY=${YOUTUBE_API_KEY:-}
     volumes:
       - ./instance:/app/instance
       - ./public:/app/public
