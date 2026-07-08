@@ -1,4 +1,4 @@
-﻿"""
+"""
 APScheduler cron job -- refreshes YouTube playlist cache every 24 hours.
 Exposes get_cached_videos() for use in route handlers.
 """
@@ -57,6 +57,6 @@ def start_scheduler():
         misfire_grace_time=300,
     )
     scheduler.start()
-    logger.info("APScheduler started -- YouTube refresh every 24 hours.")
+    logger.info("APScheduler started -- YouTube refresh every hour.")
     # Fire immediately on startup (non-blocking)
     asyncio.ensure_future(refresh_youtube_cache())
