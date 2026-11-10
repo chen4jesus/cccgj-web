@@ -14,9 +14,9 @@
 
     <section class="section-padding">
         <div class="container">
-            <h2 style="margin-bottom: 20px;">Latest Sermons <span>最新讲道</span></h2>
+            <h2 class="section-title">Latest Sermons <span>最新讲道</span></h2>
             
-            <div class="carousel-container" style="margin-bottom: 40px;">
+            <div class="carousel-container">
                 <div class="carousel-wrapper">
                     <div class="carousel-track" style="transform: translateX(-33.3333%);">
 
@@ -37,8 +37,8 @@
                         </div>
                         {% endfor %}
                         {% else %}
-                        <div class="carousel-item" style="flex: 0 0 100%; text-align: center; padding: 40px 20px;">
-                            <p style="color: #888;">Sermons are loading — please check back shortly.</p>
+                        <div class="carousel-item" style="flex: 0 0 100%;">
+                            <p class="empty-state text-center">Sermons are loading — please check back shortly.</p>
                         </div>
                         {% endif %}
 </div>
@@ -53,7 +53,7 @@
                 </button>
             </div>
             
-            <h2 style="margin-bottom: 40px;">Useful Resources <span>有用的资源</span></h2>
+            <h2 class="section-title">Useful Resources <span>有用的资源</span></h2>
             
             <div class="resource-grid">
                 <!-- Tile 1 -->

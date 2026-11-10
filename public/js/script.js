@@ -45,7 +45,70 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize Sermons Carousel
   initSermonsCarousel();
+
+  // Modern theme enhancements
+  initHeaderScroll();
+  initScrollReveal();
 });
+
+// Adds a subtle shadow to the sticky header once the page is scrolled
+function initHeaderScroll() {
+  const header = document.getElementById("main-header");
+  if (!header) return;
+  const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 8);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+}
+
+// Fades elements in as they enter the viewport
+function initScrollReveal() {
+  if (!("IntersectionObserver" in window)) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const selectors = [
+    "main .section-title",
+    ".about-copy",
+    ".about-icon-item",
+    ".grid-3 > .card",
+    ".callout-section",
+    ".bilingual-text",
+    ".team-group-title",
+    ".team-member",
+    ".ministry-row",
+    ".resource-tile",
+    ".contact-item",
+    ".lead-text",
+    ".footer-col"
+  ];
+
+  const els = document.querySelectorAll(selectors.join(","));
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          el.classList.add("is-visible");
+          observer.unobserve(el);
+          // Clean up afterwards so component hover transitions are restored
+          setTimeout(() => {
+            el.classList.remove("reveal", "is-visible");
+            el.style.removeProperty("--reveal-delay");
+          }, 1400);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  els.forEach((el) => {
+    // Stagger siblings slightly for a cascading effect
+    const siblings = Array.from(el.parentElement ? el.parentElement.children : []);
+    const idx = Math.max(0, siblings.indexOf(el));
+    el.style.setProperty("--reveal-delay", `${Math.min(idx, 5) * 0.08}s`);
+    el.classList.add("reveal");
+    observer.observe(el);
+  });
+}
 
 // Back to Top Button Logic
 function initBackToTop() {
